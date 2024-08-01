@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+label{
+    display: block;
+    margin: 2vh 1vh;
+    font-size: 3vh;
+}
+
+label > input{
+    font-size: 2vh;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid black;
+}
+
+label > input:focus{
+    border: 2px solid skyblue;
+}
+
+#submitButton{
+    margin: 0 0 1vh 30vh;
+    font-size: 2vh;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    padding: 0.5vh 2vh;
+}
+
+#priority{
+    margin: 0 0 1vh 1vh;
+    font-size: 2vh;
+}
+
+#container{
+    display: flex;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    width: 20%;
+    height: 100vh;
+    background-color: skyblue;
+    border: 1px solid black
+}
+
+.divContainer{
+    width: 80%;
+}
+
+.sidebarOptionsSection{
+    margin: 2vh 0 0 0 ;
+}
+
+.sidebarOptionsSection > button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 3vh;
+    margin: 2vh 1vh;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sidebarOptionsSection > .addtask{
+    border: none;
+    background-color: white;
+    padding: 1vh 8vh;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.addtask:hover{
+    background-color: gainsboro;
+}
+
+.projectSectiondiv{
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vh;
+}
+
+.addProjectSection{
+    display: flex;
+    align-items: center;
+}
+
+.anproject{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 2.5vh;
+    margin: 2vh 1vh;
+    width: 100%;
+    cursor: pointer;
+}
+
+.deleteproject{
+    height: 40%;
+    border-radius: 50%;
+    border: 0.5px solid black;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 5fr 0.7fr 0.7fr;
+    background-color: beige;
+    width: 95%;
+    margin: 2vh 0 2vh 4vh;
+    height: 6vh;
+    font-size: 3vh;
+    padding: 1vh 0 1vh 1vh;
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.hidden{
+    display: none;
+}
+
+.nameOfTask{
+    margin: 0;
+}
+
+.dueDateOfTask{
+    margin: 0;
+}
+
+.priorityOfTask{
+    margin: 0;
+}
+
+.list-item{
+    color: black;
+    padding: 1vh;
+    border: 1px solid black;
+}
+
+.list-item:hover{
+    background-color: beige;
+}
+
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#description, #due, #Projectadd, #urgency{
+    padding: 1vh;
+    font-size: 3vh;
+    background-color: whitesmoke;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#cardDialog{
+    border: 0.5px solid black;
+    border-radius: 10px;
+    margin: 35vh 0 0 40vw;
+    padding: 2vh;
+}
+
+#closeDialog{
+    padding: 1vh 20vh;
+    font-size: 2vh;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-top: 3vh;
+    cursor: pointer;
+}
+
+#closeDialog:hover{
+    background-color: gainsboro;
+}
+
+#taskRegistration{
+    margin: 25vh 0 0 35vw;
+}
+
+.view, .delete{
+    width: 90%;
+    border-radius: 100px;
+    height: 100%;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: gainsboro;
+}
+
+.view:hover{
+    background-color: gainsboro;
+}
+
+#submitButton:hover{
+    background-color: gainsboro;
+}
+
+#submitButton{
+    cursor: pointer;
+    border-radius: 20px;
+}
